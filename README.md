@@ -67,7 +67,6 @@ src/
 │   │   ├── resumo/          # Resumo profissional
 │   │   ├── experiencia/     # Experiências profissionais
 │   │   ├── educacao/        # Formação acadêmica
-│   │   ├── habilidades/     # Habilidades técnicas
 │   │   └── contato/         # Informações de contato
 │   ├── app.component.*      # Componente principal
 │   └── app.module.ts        # Módulo principal
@@ -103,10 +102,12 @@ Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para ma
 
 Barbara Costa Silverio
 
-- Email: barbara.silverio@email.com
-- LinkedIn: [linkedin.com/in/barbarasilverio](https://linkedin.com/in/barbarasilverio)
-- GitHub: [github.com/barbarasilverio](https://github.com/barbarasilverio)
+- Email: barbara.csilverio@gmail.com
+- LinkedIn: [linkedin.com/in/b%C3%A1rbara-costa-silverio-14400a124/](https://www.linkedin.com/in/b%C3%A1rbara-costa-silverio-14400a124/)
+- GitHub: [github.com/babisilverio](https://github.com/babisilverio)
 
 ---
 
 ⭐ Se você gostou do projeto, deixe uma estrela!
+
+obs: Desenvolvido com ajuda do gitHub copilot
