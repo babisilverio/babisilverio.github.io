@@ -110,4 +110,4 @@ Barbara Costa Silverio
 
 ⭐ Se você gostou do projeto, deixe uma estrela!
 
-obs: Desenvolvido com ajuda do gitHub copilot
+obs: Desenvolvido com ajuda do gitHub copilot.
