@@ -1,0 +1,39 @@
+{
+  "name": "babisilverio.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "watch": "ng build --watch --configuration development",
+    "test": "ng test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/babisilverio/babisilverio.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/babisilverio/babisilverio.github.io/issues"
+  },
+  "homepage": "https://github.com/babisilverio/babisilverio.github.io#readme",
+  "dependencies": {
+    "@angular/cli": "^20.2.2",
+    "@angular/common": "^20.2.4",
+    "@angular/compiler-cli": "^20.2.4",
+    "@angular/core": "^20.2.4",
+    "@angular/platform-browser": "^20.2.4",
+    "@angular/platform-browser-dynamic": "^20.2.4",
+    "@angular/router": "^20.2.4",
+    "rxjs": "^7.8.2",
+    "typescript": "^5.9.2",
+    "zone.js": "^0.15.1"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "^20.2.2"
+  }
+}

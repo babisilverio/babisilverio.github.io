@@ -1,0 +1,26 @@
+<section class="section educacao-section">
+  <div class="section-header">
+    <h2>
+      <i class="fas fa-graduation-cap"></i>
+      Educação
+    </h2>
+  </div>
+  
+  <div class="educacao-container">
+    <div *ngFor="let edu of educacao; let last = last" class="educacao-item">
+      <div class="educacao-header">
+        <h3 class="curso">{{ edu.curso }}</h3>
+        <span class="periodo">{{ edu.periodo }}</span>
+      </div>
+      
+      <h4 class="instituicao">
+        <i class="fas fa-university"></i>
+        {{ edu.instituicao }}
+      </h4>
+      
+      <p *ngIf="edu.descricao" class="descricao">{{ edu.descricao }}</p>
+      
+      <div *ngIf="!last" class="divider"></div>
+    </div>
+  </div>
+</section>

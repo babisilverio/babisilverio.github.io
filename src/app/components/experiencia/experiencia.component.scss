@@ -1,0 +1,112 @@
+.experiencia-section {
+  .section-header {
+    h2 {
+      display: flex;
+      align-items: center;
+      
+      i {
+        margin-right: 10px;
+        color: #3498db;
+      }
+    }
+  }
+
+  .experiencias-container {
+    .experiencia-item {
+      margin-bottom: 30px;
+      
+      .experiencia-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 8px;
+        flex-wrap: wrap;
+        
+        .cargo {
+          font-size: 1.3rem;
+          font-weight: 600;
+          color: #2c3e50;
+          margin: 0;
+          flex: 1;
+        }
+        
+        .periodo {
+          background: #3498db;
+          color: white;
+          padding: 5px 12px;
+          border-radius: 20px;
+          font-size: 0.9rem;
+          font-weight: 500;
+          white-space: nowrap;
+          margin-left: 10px;
+        }
+      }
+      
+      .empresa {
+        font-size: 1.1rem;
+        color: #7f8c8d;
+        margin-bottom: 15px;
+        display: flex;
+        align-items: center;
+        
+        i {
+          margin-right: 8px;
+          color: #95a5a6;
+        }
+      }
+      
+      .descricao {
+        line-height: 1.7;
+        color: #555;
+        margin-bottom: 15px;
+        text-align: justify;
+      }
+      
+      .tecnologias {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        
+        .tecnologia {
+          background: #ecf0f1;
+          color: #2c3e50;
+          padding: 4px 10px;
+          border-radius: 15px;
+          font-size: 0.85rem;
+          font-weight: 500;
+          transition: all 0.3s ease;
+          
+          &:hover {
+            background: #3498db;
+            color: white;
+            transform: translateY(-1px);
+          }
+        }
+      }
+      
+      .divider {
+        height: 1px;
+        background: linear-gradient(to right, transparent, #bdc3c7, transparent);
+        margin: 25px 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .experiencia-section {
+    .experiencias-container {
+      .experiencia-item {
+        .experiencia-header {
+          flex-direction: column;
+          align-items: flex-start;
+          
+          .periodo {
+            margin-left: 0;
+            margin-top: 8px;
+          }
+        }
+      }
+    }
+  }
+}

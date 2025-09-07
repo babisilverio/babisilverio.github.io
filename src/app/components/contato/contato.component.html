@@ -1,0 +1,28 @@
+<section class="section contato-section">
+  <div class="section-header">
+    <h2>
+      <i class="fas fa-address-card"></i>
+      Contato
+    </h2>
+  </div>
+  
+  <div class="contatos-container">
+    <div *ngFor="let contato of contatos" class="contato-item">
+      <div class="contato-info">
+        <i [class]="contato.icone" class="contato-icon"></i>
+        <div class="contato-details">
+          <strong class="contato-tipo">{{ contato.tipo }}</strong>
+          <a *ngIf="contato.link; else semLink" 
+             [href]="contato.link" 
+             class="contato-valor link"
+             target="_blank">
+            {{ contato.valor }}
+          </a>
+          <ng-template #semLink>
+            <span class="contato-valor">{{ contato.valor }}</span>
+          </ng-template>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,42 @@
+.header-section {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 40px 0;
+  color: white;
+  margin-bottom: 0;
+}
+
+.profile-image {
+  margin-bottom: 20px;
+}
+
+.header-info {
+  .name {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+  }
+
+  .title {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 15px;
+    color: #f8f9fa;
+  }
+
+  .location {
+    font-size: 1.1rem;
+    opacity: 0.9;
+    
+    i {
+      margin-right: 8px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .header-info .name {
+    font-size: 2rem;
+  }
+}
