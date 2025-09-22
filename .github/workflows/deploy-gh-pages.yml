@@ -1,0 +1,46 @@
+# Deploy Angular App usando branch gh-pages
+name: Deploy to gh-pages
+
+on:
+  push:
+    branches: ["master"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22.x'
+          cache: 'npm'
+      
+      - name: Install dependencies
+        run: npm ci
+      
+      - name: Build Angular app
+        run: npm run build -- --configuration production --base-href=/
+      
+      - name: Add .nojekyll and 404.html
+        run: |
+          cp ./dist/curriculo-barbara/index.html ./dist/curriculo-barbara/404.html
+          touch ./dist/curriculo-barbara/.nojekyll
+          echo "Build completed at: $(date)" > ./dist/curriculo-barbara/build-info.txt
+      
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist/curriculo-barbara
+          force_orphan: true
+          enable_jekyll: false
