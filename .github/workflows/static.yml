@@ -10,5 +10,7 @@ jobs:
   disabled:
     runs-on: ubuntu-latest
     steps:
-      - name: Workflow disabled
+      - name: Workflow di      git add .
+      git commit -m "feat: New deployment strategy using gh-pages branch"
+      git push origin mastersabled
         run: echo "This workflow has been replaced by deploy-gh-pages.yml"
