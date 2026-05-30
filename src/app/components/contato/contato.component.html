@@ -12,15 +12,15 @@
         <i [class]="contato.icone" class="contato-icon"></i>
         <div class="contato-details">
           <strong class="contato-tipo">{{ contato.tipo }}</strong>
-          <a *ngIf="contato.link; else semLink" 
-             [href]="contato.link" 
-             class="contato-valor link"
-             target="_blank">
-            {{ contato.valor }}
-          </a>
-          <ng-template #semLink>
+          @if (contato.link) {
+            <a [href]="contato.link" 
+               class="contato-valor link"
+               target="_blank">
+              {{ contato.valor }}
+            </a>
+          } @else {
             <span class="contato-valor">{{ contato.valor }}</span>
-          </ng-template>
+          }
         </div>
       </div>
     </div>
